@@ -6,7 +6,7 @@
 
 
 /*************************************************
-/* HEADER */
+/* ESTRUCTURAMIENTO DE CAJAS DEL HEADER */
 
 header {
 	display: flex;
@@ -14,52 +14,62 @@ header {
 	background-color: black;
 }
 
-/* LOGO */
-
+/* CONTENEDOR DEL LOGO */
 header span#contenedor_logo {
 	width: 40vw;
 }
 
+/* LOGO */
 header span#contenedor_logo img#logo {
 	max-height: 20vw;
 }
 
 /* MENÚ */
-/* ICONO DEL MENÚ DEL MÓVIL */
-
 header span#contenedor_menu_movil {
 	width: 60vw;
 	text-align: right;
 }
 
-header span#contenedor_menu_movil img#menu_movil {
-	max-height: 20vw;
-	padding-right: 0.5em;
-}
-
-/* HEADER END */
+/* END ESTRUCTURAMIENTO DE CAJAS DEL HEADER */
 /************************************************ */
 
 /*************************************************
-/* NAV */
+/* MENU PRINCIPAL (VERSIÓN MÓVIL) */
 
-nav {
+/* NAV PRINCIPAL */
+header span#contenedor_menu_movil nav#nav_principal {
 	width: 100%;
 	text-align: right;
 	font-family: Aclonica;
 	font-size: 5vmin;
-}
-
-.nav {
 	position:absolute;
 	top: 20vw;
 	left:-300px;
 	transition:all .5s ease;
 }
 
+/* ICONO DEL MENÚ */
+header span#contenedor_menu_movil label.menu::before {
+    content:"☰";
+    font-size:15vw;
+    color: white;
+    text-align: right;
+    padding-right: 2vw;
+}
+
+/* OCULTAR CHECKBOX */
+header span#contenedor_menu_movil input.desplegable {
+  display:none; 
+}
+
+/* SACAR EL MENÚ CUANDO SE PULSA EL CHECKBOX (ICONO) */
+header span#contenedor_menu_movil input.desplegable:checked ~ nav#nav_principal {
+  left: 0px;
+  position:fixed;
+}
+
 /* BOTONERA DEL MENÚ */
-nav ul#botonera_menu {
-	/*display: none;*/
+header span#contenedor_menu_movil nav#nav_principal ul#botonera_menu {
 	
 	width: 60%;
 	list-style-type: none;
@@ -76,46 +86,26 @@ nav ul#botonera_menu {
 	-webkit-box-shadow: 4px 5px 5px 0px rgba(50, 50, 50, 0.32);
 	-moz-box-shadow:    4px 5px 5px 0px rgba(50, 50, 50, 0.32);
 	box-shadow:         4px 5px 5px 0px rgba(50, 50, 50, 0.32);
-
-	
 }
 
-nav ul#botonera_menu li {
+header span#contenedor_menu_movil nav#nav_principal ul#botonera_menu li {
 	padding-top: 2vw;
 	padding-bottom: 2vw;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 }
 
-nav ul#botonera_menu li a {
+header span#contenedor_menu_movil nav#nav_principal ul#botonera_menu li a {
 	display: block;
 	padding-right: 3vw;
 	text-decoration: none;
 	color: white;
 }
 
-nav ul#botonera_menu li a:hover {
+header span#contenedor_menu_movil nav#nav_principal ul#botonera_menu li a:hover {
 	background-color: white;
 	color: black;
 }
 
-/*pRUEBA */
-
-.menu::before {
-    content:"☰";
-    font-size:15vw;
-    color: orange;
-    text-align: right;
-}
-
-.desplegable {
-  display:none; 
-}
-
-.desplegable:checked ~ .nav {
-  left: 0px;
-  position:fixed;
-}
-
-/* NAV END */
+/* END MENU PRINCIPAL (VERSIÓN MÓVIL) */
 /************************************************ */
