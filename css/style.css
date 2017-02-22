@@ -1,0 +1,121 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+/*************************************************
+/* HEADER */
+
+header {
+	display: flex;
+	width: 100%;
+	background-color: black;
+}
+
+/* LOGO */
+
+header span#contenedor_logo {
+	width: 40vw;
+}
+
+header span#contenedor_logo img#logo {
+	max-height: 20vw;
+}
+
+/* MENÚ */
+/* ICONO DEL MENÚ DEL MÓVIL */
+
+header span#contenedor_menu_movil {
+	width: 60vw;
+	text-align: right;
+}
+
+header span#contenedor_menu_movil img#menu_movil {
+	max-height: 20vw;
+	padding-right: 0.5em;
+}
+
+/* HEADER END */
+/************************************************ */
+
+/*************************************************
+/* NAV */
+
+nav {
+	width: 100%;
+	text-align: right;
+	font-family: Aclonica;
+	font-size: 5vmin;
+}
+
+.nav {
+	position:absolute;
+	top: 20vw;
+	left:-300px;
+	transition:all .5s ease;
+}
+
+/* BOTONERA DEL MENÚ */
+nav ul#botonera_menu {
+	/*display: none;*/
+	
+	width: 60%;
+	list-style-type: none;
+	font-weight: bold;
+	border: 2px solid black;
+	background-color: #c89140;
+
+	-webkit-border-radius: 5px;
+	-webkit-border-top-left-radius:2em;
+	-moz-border-radius: 5px;
+	-moz-border-top-left-radius:2em;
+	border-radius: 5px;
+	border-top-left-radius:0px;
+	-webkit-box-shadow: 4px 5px 5px 0px rgba(50, 50, 50, 0.32);
+	-moz-box-shadow:    4px 5px 5px 0px rgba(50, 50, 50, 0.32);
+	box-shadow:         4px 5px 5px 0px rgba(50, 50, 50, 0.32);
+
+	
+}
+
+nav ul#botonera_menu li {
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+nav ul#botonera_menu li a {
+	display: block;
+	padding-right: 3vw;
+	text-decoration: none;
+	color: white;
+}
+
+nav ul#botonera_menu li a:hover {
+	background-color: white;
+	color: black;
+}
+
+/*pRUEBA */
+
+.menu::before {
+    content:"☰";
+    font-size:15vw;
+    color: orange;
+    text-align: right;
+}
+
+.desplegable {
+  display:none; 
+}
+
+.desplegable:checked ~ .nav {
+  left: 0px;
+  position:fixed;
+}
+
+/* NAV END */
+/************************************************ */
