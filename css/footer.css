@@ -29,6 +29,10 @@ footer span#contenedor_opciones_adicionales img#logo_footer {
 	margin: 0 auto;
 }
 
+footer span#contenedor_opciones_adicionales div#iconos_sociales {
+	display: none;
+}
+
 footer span#contenedor_opciones_adicionales hr {
 	width: 90%;
 	margin: 0 auto;
@@ -49,3 +53,126 @@ footer span#contenedor_opciones_adicionales p#copyright {
 
 /* END OPCIONES ADICIONALES (VERSIÓN MÓVIL) */
 /************************************************ */
+
+/*************************************************
+/* VISTA DE ESCRITORIO - Dispositivos >= 768 píxeles */
+@media (min-width: 768px) {
+
+	/*************************************************
+	/* ESTRUCTURAMIENTO DE CAJAS DEL FOOTER */
+
+	footer {
+		display: inline-flex;
+		width: 100%;
+		background-color: black;
+		max-height: 8vw;
+	}
+
+	footer nav#nav_secundario {
+		display: inline;
+		width: 60vw;
+		height: 8vw;
+		text-align: center;
+	}
+
+	footer span#contenedor_opciones_adicionales {
+		display: inline;
+		width: 40vw;
+		height: 8vw;
+		text-align: center;
+		border: 1px solid white;
+	}
+
+	/* END ESTRUCTURAMIENTO DE CAJAS DEL FOOTER */
+	/************************************************ */
+
+	/*************************************************
+	/* MENU PRINCIPAL (VERSIÓN ESCRITORIO) */
+
+	footer nav#nav_secundario ul#botonera_menu_footer {
+		width: 100%;
+		display: inline-flex;
+	}
+
+	footer nav#nav_secundario ul#botonera_menu_footer li {
+		height: 8vw;
+		width: 25%;
+		display: inline;
+		list-style-type: none;
+		border: 1px solid white;
+		line-height: 4vw;
+	}
+
+	footer nav#nav_secundario ul#botonera_menu_footer li:hover {
+		border: 2px solid #c89140;
+		background-color: white;
+	}
+
+	footer nav#nav_secundario ul#botonera_menu_footer li:nth-child(3) {
+		line-height: 8vw;
+	}
+
+	footer nav#nav_secundario ul#botonera_menu_footer li a {
+		height: 8vw;
+		display: block;
+		text-decoration: none;
+		color: white;
+		font-family: Aclonica;
+		font-size: 1.6vw;
+	}
+
+	footer nav#nav_secundario ul#botonera_menu_footer li a:hover {
+		color: #c89140;
+	}
+
+	/* END MENU PRINCIPAL (VERSIÓN ESCRITORIO) */
+	/************************************************ */
+
+	/*************************************************
+	/* OPCIONES ADICIONALES (VERSIÓN ESCRITORIO) */
+
+	footer span#contenedor_opciones_adicionales img#logo_footer {
+		display: none;
+	}
+
+	footer span#contenedor_opciones_adicionales div#iconos_sociales {
+		display: block;
+	}
+
+	footer span#contenedor_opciones_adicionales div#iconos_sociales a {
+		text-decoration: none;
+	}
+
+	footer span#contenedor_opciones_adicionales div#iconos_sociales a img {
+		height: 2vw;
+		margin: 2vw;
+		margin-top: 1vw;
+		margin-bottom: 0.5vw;
+	}
+
+	footer span#contenedor_opciones_adicionales div#iconos_sociales a img:hover {
+		background-color: #c89140;
+	}
+
+	footer span#contenedor_opciones_adicionales hr {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	footer span#contenedor_opciones_adicionales p#terminos {
+		margin-top: 0.5rem;
+		font-size: 1vw;
+		text-transform: none;
+		font-weight: bold;
+	}
+
+	footer span#contenedor_opciones_adicionales p#copyright {
+		margin-top: 0.5rem;
+		font-size: 1vw;
+		color: white;
+	}
+
+	/* END OPCIONES ADICIONALES (VERSIÓN ESCRITORIO) */
+	/************************************************ */
+
+}
