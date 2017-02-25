@@ -1,0 +1,177 @@
+/*************************************************
+/* TIPOS DE CAFÉ (VERSIÓN MÓVIL) */
+
+body main section section#tipos_de_cafe {
+	margin: 0px;
+	width: 100%;
+}
+
+body main section section#tipos_de_cafe article {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 6vw;
+	background-color: #D8D8D8;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body main section section#tipos_de_cafe article a {
+	text-decoration: none;
+}
+
+body main section section#tipos_de_cafe article a img {
+	width: 100%;
+
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+body main section section#tipos_de_cafe article a div.nombre_cafe {
+	text-align: center;
+	padding: 1vw;
+	font-size: 8vw;
+	font-weight: bold;
+	color: black;
+}
+
+/* END TIPOS DE CAFÉ (VERSIÓN MÓVIL) */
+/************************************************ */
+
+/*************************************************
+/* DESCRIPCIONES DE LOS CAFÉS (VERSIÓN MÓVIL) */
+
+body main section section#descripcion_tipos_cafe {
+	width: 100%;
+}
+
+body main section section#descripcion_tipos_cafe article {
+	margin-top: 5vw;
+	padding: 5vw;
+	font-size: 5vw;
+}
+
+body main section section#descripcion_tipos_cafe article h2 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+body main section section#descripcion_tipos_cafe article div.contenedor_texto p {
+	margin: 0.5rem;
+	text-align: justify;
+}
+
+body main section section#descripcion_tipos_cafe article div.volver {
+	margin: 0 auto;
+	width: 70%;
+}
+
+body main section section#descripcion_tipos_cafe article div.volver a {
+	display: block;
+	text-decoration: none;
+	background-color: #c89140;
+	color: white;
+	text-align: center;
+	font-size: 8vw;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+/* END DESCRIPCIONES DE LOS CAFÉS (VERSIÓN MÓVIL) */
+/************************************************ */
+
+/*************************************************
+/* VISTA DE ESCRITORIO - Dispositivos >= 768 píxeles */
+@media (min-width: 768px) {
+
+	/*************************************************
+	/* TIPOS DE CAFÉ (VERSIÓN ESCRITORIO) */
+
+	body main section section#tipos_de_cafe article {
+		display: inline-block;
+		width: 40%;
+		margin: 4vw;
+	}
+
+	body main section section#descripcion_tipos_cafe article div.contenedor_texto {
+
+		margin-top: 5ex;
+		margin-bottom: 5ex;
+
+		column-count: 2;
+		-moz-column-count: 2;
+		column-gap: 2em;
+		-moz-column-gap: 2em;
+	    -webkit-column-rule: 0.25rem solid rgb(0, 0, 0); /* Chrome, Safari, Opera */
+	    -moz-column-rule: 0.25rem solid rgb(0, 0, 0); /* Firefox */
+	    column-rule: 0.25rem solid rgb(0, 0, 0);
+	}
+
+	body main section section#descripcion_tipos_cafe article div.contenedor_texto p {
+		margin: 2rem;
+	}
+
+	body main section section#tipos_de_cafe article:hover {
+		background-color: #c89140;
+	}
+
+	body main section section#tipos_de_cafe article a {
+		text-decoration: none;
+	}
+
+	body main section section#tipos_de_cafe article a img {
+		height: 20vw;
+	}
+
+	body main section section#tipos_de_cafe article:hover a img {
+		opacity: 0.70;
+	}
+
+	body main section section#tipos_de_cafe article a div.nombre_cafe {
+		font-size: 1.5vw;
+	}
+
+	body main section section#tipos_de_cafe article:hover a div.nombre_cafe {
+		color: white;
+	}
+
+	/* END TIPOS DE CAFÉ (VERSIÓN ESCRITORIO) */
+	/************************************************ */
+
+	/*************************************************
+	/* DESCRIPCIONES DE LOS CAFÉS (VERSIÓN ESCRITORIO) */
+
+	body main section section#descripcion_tipos_cafe article {
+		margin-top: 5ex;
+		padding: 0px;
+		font-size: 1.5vw;
+	}
+
+	body main section section#descripcion_tipos_cafe article div.volver {
+		margin: 0px;
+		width: 100%;
+	}
+
+	body main section section#descripcion_tipos_cafe article div.volver a {
+		background-color: black;
+		font-size: 2vw;
+
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+	}
+
+	body main section section#descripcion_tipos_cafe article div.volver a:hover {
+		background-color: #c89140;
+	}
+
+	/* END DESCRIPCIONES DE LOS CAFÉS (VERSIÓN ESCRITORIO) */
+	/************************************************ */
+
+}
+/* END VISTA DE ESCRITORIO */
+/************************************************ */

@@ -15,7 +15,6 @@
 		width: 90%;
 		margin: 0 auto;
 		background-image: url('../img/fondo.jpg');
-		background-size: cover;
 	}
 
 	body main {
@@ -25,7 +24,6 @@
 	}
 
 	body main section {
-		padding: 3vw;
 		width: 96%;
 		margin: 0 auto;
 		background-color: white;
