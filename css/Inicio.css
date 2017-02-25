@@ -1,0 +1,56 @@
+body main section article p {
+	text-align: justify;
+	padding: 5vw;
+	font-size: 5vw;
+}
+
+body main section article img {
+	max-width: 90vw;
+	border-radius: 50%;
+}
+
+.negrita {
+	font-weight: bold;
+}
+
+/*************************************************
+/* VISTA DE ESCRITORIO - Dispositivos >= 768 píxeles */
+@media (min-width: 768px) {
+
+	body main section article {
+		column-count: 2;
+		-moz-column-count: 2;
+		column-gap: 2em;
+		-moz-column-gap: 2em;
+	    -webkit-column-rule: 0.25rem solid rgb(0, 0, 0)  ; /* Chrome, Safari, Opera */
+	    -moz-column-rule: 0.25rem solid rgb(0, 0, 0)  ; /* Firefox */
+	    column-rule: 0.25rem solid rgb(0, 0, 0)  ;
+
+	}
+
+	body main section article p {
+		padding: 0px;
+		font-size: 1.5vw;
+	}
+
+	body main section article p img {
+		margin: 1rem;
+		border-radius: 0%;
+	}
+
+	body main section article p img#cafe1 {
+		float: left;
+		margin-left: 0px;
+		max-height: 10vw;
+	}
+
+	body main section article p img#cafe2 {
+		float: right;
+		margin-right: 0px;
+		max-height: 12vw;
+	}
+
+}
+
+/* END VISTA DE ESCRITORIO */
+	/************************************************ */

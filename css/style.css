@@ -1,239 +1,43 @@
+/*************************************************
+/* ESTRUCTURAMIENTO DE CAJAS DEL CUERPO DE LA PÁGINA */
+
 * {
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
 }
 
-
-/*************************************************
-/* ESTRUCTURAMIENTO DE CAJAS DEL HEADER */
-
-header {
-	display: flex;
-	width: 100%;
-	background-color: black;
-}
-
-/* CONTENEDOR DEL LOGO */
-header span#contenedor_logo {
-	width: 40vw;
-}
-
-/* LOGO */
-header span#contenedor_logo img#logo {
-	max-height: 20vw;
-}
-
-/* MENÚ */
-header span#contenedor_menu_movil {
-	width: 60vw;
-	text-align: right;
-}
-
-/* END ESTRUCTURAMIENTO DE CAJAS DEL HEADER */
-/************************************************ */
-
-/*************************************************
-/* MENU PRINCIPAL (VERSIÓN MÓVIL) */
-
-/* NAV PRINCIPAL */
-header span#contenedor_menu_movil nav#nav_principal {
-	width: 100%;
-	text-align: right;
-	font-family: Aclonica;
-	font-size: 5vmin;
-	position:absolute;
-	top: 20vw;
-	left:-300px;
-	transition:all .5s ease;
-}
-
-/* ICONO DEL MENÚ */
-header span#contenedor_menu_movil label.menu::before {
-    content:"☰";
-    font-size:15vw;
-    color: white;
-    text-align: right;
-    padding-right: 2vw;
-}
-
-/* OCULTAR CHECKBOX */
-header span#contenedor_menu_movil input.desplegable {
-  display:none; 
-}
-
-/* SACAR EL MENÚ CUANDO SE PULSA EL CHECKBOX (ICONO) */
-header span#contenedor_menu_movil input.desplegable:checked ~ nav#nav_principal {
-  left: 0px;
-  position:fixed;
-}
-
-/* BOTONERA DEL MENÚ */
-header span#contenedor_menu_movil nav#nav_principal ul#botonera_menu {
-	
-	width: 60%;
-	list-style-type: none;
-	font-weight: bold;
-	border: 2px solid black;
-	background-color: #c89140;
-
-	-webkit-border-radius: 5px;
-	-webkit-border-top-left-radius:2em;
-	-moz-border-radius: 5px;
-	-moz-border-top-left-radius:2em;
-	border-radius: 5px;
-	border-top-left-radius:0px;
-	-webkit-box-shadow: 4px 5px 5px 0px rgba(50, 50, 50, 0.32);
-	-moz-box-shadow:    4px 5px 5px 0px rgba(50, 50, 50, 0.32);
-	box-shadow:         4px 5px 5px 0px rgba(50, 50, 50, 0.32);
-}
-
-header span#contenedor_menu_movil nav#nav_principal ul#botonera_menu li {
-	padding-top: 2vw;
-	padding-bottom: 2vw;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-}
-
-header span#contenedor_menu_movil nav#nav_principal ul#botonera_menu li a {
-	display: block;
-	padding-right: 3vw;
-	text-decoration: none;
-	color: white;
-}
-
-header span#contenedor_menu_movil nav#nav_principal ul#botonera_menu li a:hover {
-	background-color: white;
-	color: black;
-}
-
-/* END MENU PRINCIPAL (VERSIÓN MÓVIL) */
-/************************************************ */
-
 /*************************************************
 /* VISTA DE ESCRITORIO - Dispositivos >= 768 píxeles */
 @media (min-width: 768px) {
 
 	body {
-		width: 80%;
+		width: 90%;
 		margin: 0 auto;
-		background-color: green;
+		background-image: url('../img/fondo.jpg');
+		background-size: cover;
 	}
 
-	/*************************************************
-	/* ESTRUCTURAMIENTO DE CAJAS DEL HEADER */
-
-	header {
-		display: flex;
-		width: 100%;
-		background-color: black;
-	}
-
-	/* CONTENEDOR DEL LOGO */
-	header span#contenedor_logo {
-		width: 30vw;
-		max-height: 8vw;
+	body main {
+		background-color: black; /*
+		opacity: 0.65; */
 		border: 1px solid white;
 	}
 
-	/* LOGO */
-	header span#contenedor_logo img#logo {
-		max-height: 7vw;
-		padding-left: 0.2vw;
-	}
-
-	/* CONTENEDOR DEL MENÚ */
-	header span#contenedor_menu_movil {
-		width: 70vw;
-		max-height: 8vw;
-	}
-
-	/* END ESTRUCTURAMIENTO DE CAJAS DEL HEADER */
-	/************************************************ */
-
-	/*************************************************
-	/* MENU PRINCIPAL (VERSIÓN ESCRITORIO) */
-
-	/* NAV PRINCIPAL */
-	header span#contenedor_menu_movil nav#nav_principal {
-		position: static;
-		width: 100%;
-		height: 8vw;
-		text-align: center;
-		font-family: Aclonica;
-		font-size: 1.6vw;
-		transition: none;
-	}
-
-	/* ICONO DEL MENÚ MÓVIL */
-	header span#contenedor_menu_movil label.menu::before {
-	    display: none;
-	}
-
-	/* BOTONERA DEL MENÚ */
-	header span#contenedor_menu_movil nav#nav_principal ul#botonera_menu {
-		
-		width: 100%;
-		height: 8vw;
-		display: inline-flex;
-		list-style-type: none;
-		font-weight: bold;
-		border: 0px;
-		background-color: black;
-
-		-webkit-border-radius: 0px;
-		-webkit-border-top-left-radius: 0px;
-		-moz-border-radius: 0px;
-		-moz-border-top-left-radius: 0px;
-		border-radius: 0px;
-		border-top-left-radius: 0px;
-		-webkit-box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0.32);
-		-moz-box-shadow:    0px 0px 0px 0px rgba(50, 50, 50, 0.32);
-		box-shadow:         0px 0px 0px 0px rgba(50, 50, 50, 0.32);
-	}
-
-	header span#contenedor_menu_movil nav#nav_principal ul#botonera_menu li {
-		height: 8vw;
-		width: 25%;
-		display: inline;
-		padding-top: 0px;
-		padding-bottom: 0px;
-		border: 1px solid white;
-	}
-
-	header span#contenedor_menu_movil nav#nav_principal ul#botonera_menu li:hover {
-		border: 2px solid #c89140;
+	body main section {
+		padding: 3vw;
+		width: 96%;
+		margin: 0 auto;
 		background-color: white;
+		opacity: 1;
+		font-family: "Times New Roman";
+
 	}
 
-	header span#contenedor_menu_movil nav#nav_principal ul#botonera_menu li a {
-		display: block;
-		height: 8vw;
-		padding-right: 0px;
-		text-decoration: none;
-		color: white;
-	}
-
-	/* NOTA: Aquí hago esto para alinear el text del menú al centro de forma vertical */
-	header span#contenedor_menu_movil nav#nav_principal ul#botonera_menu li:nth-child(1),
-	header span#contenedor_menu_movil nav#nav_principal ul#botonera_menu li:nth-child(4) {
-		line-height: 8vw;
-	}
-
-	header span#contenedor_menu_movil nav#nav_principal ul#botonera_menu li:nth-child(2),
-	header span#contenedor_menu_movil nav#nav_principal ul#botonera_menu li:nth-child(3) {
-		line-height: 4vw;
-	}
-
-	header span#contenedor_menu_movil nav#nav_principal ul#botonera_menu li a:hover {
-		background-color: transparent;
-		color: #c89140;
-	}
-
-	/* END MENU PRINCIPAL (VERSIÓN ESCRITORIO) */
+	/* END VISTA DE ESCRITORIO */
 	/************************************************ */
 
 }
 
-/* END VISTA DE ESCRITORIO - Dispositivos >= 768 píxeles */
+/* END ESTRUCTURAMIENTO DE CAJAS DEL CUERPO DE LA PÁGINA */
 /************************************************ */
