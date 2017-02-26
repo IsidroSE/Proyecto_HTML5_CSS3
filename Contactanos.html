@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
 		<link rel="stylesheet" type="text/css" href="./css/header.css">
+		<link rel="stylesheet" type="text/css" href="./css/contactanos.css">
 		<link rel="stylesheet" type="text/css" href="./css/footer.css">
 	</head>
 	<body>
@@ -27,8 +28,48 @@
 		</header>
 		<main>
 			<br>
-			<section>
+			<section id="contactanos">
+				<article id="info_contacto">
+					<div id="info">
+						<h1>¡TU OPINIÓN IMPORTA!</h1>
+						<p>Envíanos un email a Direccion@dominio.com<br>o lláma al 672 716 450</p>
+					</div>
+					<div id="info_imagen">
+						<img src="./img/contact-us.jpg">
+					</div>
+				</article>
+				<article id="formulario">
 
+					<form method="post" action="procesa.php" autocomplete="off">
+
+						<table>
+							<tr>
+								<td><label for="nombre">Nombre:<span class="rojo">*</span> </label></td>
+								<td><input type="text" id="nombre" required="required" placeholder="Nombre" /></td>
+							</tr>
+							<tr>
+								<td><label for="email">Email:<span class="rojo">*</span> </label></td>
+								<td><input type="email" id="email" required="required" placeholder="Ejemplo@dominio.com" /></td>
+							</tr>
+							<tr>
+								<td><label for="asunto">Asunto: </label></td>
+								<td><input type="text" id="asunto" placeholder="Agregar un asunto"/></td>
+							</tr>
+							<tr>
+								<td colspan="2"><label for="mensaje">Mensaje:</label></td>
+							</tr>
+							<tr>
+								<td colspan="2"><textarea id="mensaje" placeholder="Agregue un mensaje"></textarea></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><a href="#" class="myButton">Enviar</a></td>
+							</tr>
+						</table>
+
+					</form>
+
+				</article>
 			</section>
 			<br>
 		</main>
