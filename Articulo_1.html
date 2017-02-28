@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Caf.NET</title>
+		<meta charset="UTF-8" />
+		<link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/header.css">
+		<link rel="stylesheet" type="text/css" href="./css/Articulo.css">
+		<link rel="stylesheet" type="text/css" href="./css/footer.css">
+	</head>
+	<body>
+		<header>
+			<span id="contenedor_logo"><img id="logo" src="./img/logo.png" /></span>
+			<span id="contenedor_menu_movil">
+				<input type="checkbox" class="desplegable" id="menu_desplegable"/>
+				<label for="menu_desplegable" class="menu"></label>
+				<nav id="nav_principal">
+					<ul id="botonera_menu">
+						<li> <a href="index.html">Inicio</a> </li>
+						<li> <a href="Nuestros_cafes.html">Nuestros<br>Cafés</a> </li>
+						<li> <a href="Ideas_para_regalar.html">Ideas para<br>regalar</a> </li>
+						<li> <a href="Contactanos.html">Contáctanos</a> </li>
+					</ul>
+				</nav>
+			</span>
+		</header>
+		<main>
+			<br>
+			<section>
+				<article>
+
+					<div id="contenedor_info_articulo">
+
+						<div id="contenedor_imagen_superior">
+							<img id="imagen_superior" src="./img/vasos.jpg" />
+						</div>
+
+						<div id="informacion">
+							<h1>Vasos de Recetas PURE</h1>
+							<img id="imagen_inferior" src="./img/vasos.jpg" />
+							<p>20.00€</p>
+							<p id="votos">
+								<img class="estrella" src="./img/estrellaA.png" />
+								<img class="estrella" src="./img/estrellaA.png" />
+								<img class="estrella" src="./img/estrellaA.png" />
+								<img class="estrella" src="./img/estrellaA.png" />
+								<img class="estrella" src="./img/estrella.jpg" />
+							</p>
+							<p class="stock">En stock.</p>
+							<p class="fecha_entrega"> <a href="#">Haz clic aquí para una nueva fecha estimada de entrega.</a> </p>
+						</div>
+
+						<div id="opciones_de_compra">
+							<div>
+								<input type="radio" name="opcion" id="nuevo" checked/>
+								<label for="nuevo">Nuevo</label>
+								<div id="div_nuevo">
+									Cantidad:&nbsp;
+									<select name="idiomas" id="cantidad_articulo">
+										<option selected value="1"> 1 </option>
+										<option value="2"> 2 </option>
+										<option value="3"> 3 </option>
+									</select>
+									<br>
+									<a href="#" class="myButton">Añadir a la cesta</a>
+								</div>
+							</div>
+							<div>
+								<input type="radio" name="opcion" id="segunda"/>
+								<label for="segunda">De segunda mano</label>
+								<div id="div_segunda_mano">
+									<p>De 2ª mano: Muy bueno</p>
+									<a href="#" class="myButton">Añadir a la cesta</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="informacion_detallada">
+						<p>Parte de la Colección PURE, los vasos de recetas PURE son perfectos para servir Latte macchiatos y otras recetas.</p>
+						<p>El juego de café ideal para impresionar a sus amigos durante sus reuniones.</p>
+						<p>Set de 2 vasos de recetas de cristal templado (capacidad máxima: 350 ml) y 2 cucharas de recetas de acero inoxidable (19.4 cm).</p>
+					</div>
+
+					<div id="comentarios_usuarios">
+						<h3>Opiniones de clientes</h3>
+
+						<div class="opinion_cliente">
+							<p class="votos_comentarios">
+								<img class="estrella" src="./img/estrellaA.png" />
+								<img class="estrella" src="./img/estrellaA.png" />
+								<img class="estrella" src="./img/estrellaA.png" />
+								<img class="estrella" src="./img/estrellaA.png" />
+								<img class="estrella" src="./img/estrella.jpg" />
+								<a href="#">Muy contento con la compra.</a>
+							</p>
+							<p class="autor_comentarios">
+								Por <a href="#">Miguel Hidalgo</a> en 9 de noviembre de 2016
+							</p>
+							<p class="comentarios">Muy buen vaso. A mis amigos les ha gustado.</p>
+							<p class="respuestas">
+								<a href="#">7 respuestas</a>
+								A 426 personas les ha parecido esto útil. ¿Esta opinión te ha parecido útil?
+								<input type="button" value="Sí">
+								<input type="button" value="No">
+							</p>
+						</div>
+
+						<div class="opinion_cliente">
+							<p class="votos_comentarios">
+								<img class="estrella" src="./img/estrellaA.png" />
+								<img class="estrella" src="./img/estrella.jpg" />
+								<img class="estrella" src="./img/estrella.jpg" />
+								<img class="estrella" src="./img/estrella.jpg" />
+								<img class="estrella" src="./img/estrella.jpg" />
+								<a href="#">Se han pasado con el precio.</a>
+							</p>
+							<p class="autor_comentarios">
+								Por <a href="#">Pepe Martinez</a> en 16 de marzo de 2016
+							</p>
+							<p class="comentarios">Muy caro.</p>
+							<p class="respuestas">
+								<a href="#">2 respuestas</a>
+								A 10 personas les ha parecido esto útil. ¿Esta opinión te ha parecido útil?
+								<input type="button" value="Sí">
+								<input type="button" value="No">
+							</p>
+						</div>
+
+						<div class="opinion_cliente">
+							<p class="votos_comentarios">
+								<img class="estrella" src="./img/estrellaA.png" />
+								<img class="estrella" src="./img/estrellaA.png" />
+								<img class="estrella" src="./img/estrellaA.png" />
+								<img class="estrella" src="./img/estrellaA.png" />
+								<img class="estrella" src="./img/estrellaA.png" />
+								<a href="#">Posiblemente, el mejor vaso del mundo.</a>
+							</p>
+							<p class="autor_comentarios">
+								Por <a href="#">Oliver</a> en 5 de enero de 2017
+							</p>
+							<p class="comentarios">El vaso perfecto.</p>
+							<p class="respuestas">
+								<a href="#">12 respuestas</a>
+								A 529 personas les ha parecido esto útil. ¿Esta opinión te ha parecido útil?
+								<input type="button" value="Sí">
+								<input type="button" value="No">
+							</p>
+						</div>
+
+						<div class="productos_recomendados">
+							<h3>Productos relacionados</h3>
+
+							<div class="contenedor_articulos">
+								<article>
+									<a href="#">
+										<img src="./img/aeroccino.jpg" />
+										<h2>Aeroccino 3 Negro - Espumador de Leche</h2>
+									</a>
+									<p>70.00€</p>
+								</article>
+
+								<article>
+									<a href="#">
+										<img src="./img/cucharas.jpg" />
+										<h2>Cucharas Espresso VIEW</h2>
+									</a>
+									<p>20.00€</p>
+								</article>
+
+								<article>
+									<a href="#">
+										<img src="./img/discovery-box.jpg" />
+										<h2>Discovery Box (Empty)</h2>
+									</a>
+									<p>32.00€</p>
+								</article>
+							</div>
+
+						</div>
+
+					</div>
+
+				</article>
+			</section>
+			<br>
+		</main>
+		<footer>
+			<nav id="nav_secundario">
+				<ul id="botonera_menu_footer">
+					<li> <a href="Nuestros_cafes.html">Nuestros<br>Cafés</a> </li>
+					<li> <a href="Ideas_para_regalar.html">Ideas para<br>regalar</a> </li>
+					<li> <a href="Contactanos.html">Contáctanos</a> </li>
+					<li> <a href="#">Términos<br>de uso</a> </li>
+				</ul>
+			</nav>
+			<span id="contenedor_opciones_adicionales">
+				<img id="logo_footer" src="./img/logo.png" />
+				<div id="iconos_sociales">
+					<a href="#"> <img src="./img/twitter.png"> </a>
+					<a href="#"> <img src="./img/facebook.png"> </a>
+					<a href="#"> <img src="./img/google-plus.png"> </a>
+					<a href="#"> <img src="./img/pinterest.png"> </a>
+				</div>
+				<hr>
+				<p id="terminos"> <a href="#">Términos y condiciones</a> </p>
+				<p id="copyright">©2017 Todos los derechos reservados</p>
+			</span>
+		</footer>
+	</body>
+</html>

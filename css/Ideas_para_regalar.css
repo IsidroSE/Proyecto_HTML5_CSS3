@@ -25,12 +25,16 @@ main section section#contenedor_articulos article img {
 	margin-bottom: 4vw;
 }
 
-main section section#contenedor_articulos article h2, 
+main section section#contenedor_articulos article a h2, 
 main section section#contenedor_articulos article p, 
-main section section#contenedor_articulos article a {
+main section section#contenedor_articulos article a.myButton {
 	padding-top: 2vw;
 	padding-bottom: 2vw;
 	font-size: 7vw;
+}
+
+main section section#contenedor_articulos article a.link_articulo {
+	text-decoration: none;
 }
 
 main section section#contenedor_articulos article a.myButton {
@@ -205,15 +209,20 @@ main section section#contenedor_articulos article a.myButton:active {
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 
-	main section section#contenedor_articulos article img {
+	main section section#contenedor_articulos article a.link_articulo:hover {
+		color: #c89140;
+		text-decoration: underline;
+	}
+
+	main section section#contenedor_articulos article a img {
 		width: 80%;
 		margin-top: 1vw;
 		margin-bottom: 1vw;
 	}
 
-	main section section#contenedor_articulos article h2, 
+	main section section#contenedor_articulos article a h2, 
 	main section section#contenedor_articulos article p, 
-	main section section#contenedor_articulos article a {
+	main section section#contenedor_articulos article a.myButton {
 		padding-top: 0.5ex;
 		padding-bottom: 0.5ex;
 		font-size: 1.3vw;

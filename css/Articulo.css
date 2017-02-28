@@ -1,0 +1,445 @@
+/*************************************************
+/* CONTENEDOR INFORMACIÓN ARTÍCULO (VERSIÓN MÓVIL) */
+
+main section article {
+	font-size: 7vw;
+	font-family: 'Open Sans', sans-serif;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+/*************************************************
+/* IMAGEN SUPERIOR (VERSIÓN MÓVIL) */
+
+main section article div#contenedor_info_articulo div#contenedor_imagen_superior {
+	display: none;
+}
+
+/* END IMAGEN SUPERIOR (VERSIÓN MÓVIL) */
+/************************************************ */
+
+/*************************************************
+/* INFORMACIÓN ARTÍCULO (VERSIÓN MÓVIL) */
+
+main section article div#contenedor_info_articulo div#informacion {
+	text-align: center;
+}
+
+main section article div#contenedor_info_articulo div#informacion > * {
+	padding-top: 2vw;
+}
+
+main section article div#contenedor_info_articulo div#informacion img#imagen_inferior {
+	width: 90%;
+}
+
+main section article div#contenedor_info_articulo div#informacion p#votos img.estrella {
+	width: 15%;
+}
+
+main section article div#contenedor_info_articulo div#informacion p.stock {
+	color: green;
+}
+
+main section article div#contenedor_info_articulo div#informacion p.fecha_entrega a {
+	text-decoration: none;
+}
+
+/* END INFORMACIÓN ARTÍCULO (VERSIÓN MÓVIL) */
+/************************************************ */
+
+/*************************************************
+/* OPCIONES DE COMPRA (VERSIÓN MÓVIL) */
+
+main section article div#contenedor_info_articulo div#opciones_de_compra {
+	padding-top: 10vw;
+	text-align: center;
+}
+
+main section article div#contenedor_info_articulo div#opciones_de_compra > * {
+	padding-top: 2vw;
+}
+
+main section article div#contenedor_info_articulo div#opciones_de_compra div div > * {
+	margin-top: 5vw;
+}
+
+main section article div#contenedor_info_articulo div#opciones_de_compra div > * {
+	padding-top: 3vw;
+}
+
+main section article div#contenedor_info_articulo div#opciones_de_compra div div#div_nuevo {
+	display: none;
+}
+
+main section article div#contenedor_info_articulo div#opciones_de_compra div div#div_segunda_mano {
+	display: none;
+}
+
+main section article div#contenedor_info_articulo div#opciones_de_compra div input#nuevo:checked ~ div#div_nuevo {
+	display: block;
+}
+
+main section article div#contenedor_info_articulo div#opciones_de_compra div input#segunda:checked ~ div#div_segunda_mano {
+	display: block;
+}
+
+main section article div#contenedor_info_articulo div#opciones_de_compra div div select#cantidad_articulo {
+	width: 3rem;
+	text-align: center;
+	padding-bottom: 4vw;
+}
+
+main section article div#contenedor_info_articulo div#opciones_de_compra a.myButton {
+	width: 60%;
+	margin-bottom: 5vw;
+
+	-moz-box-shadow: 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow: 0px 1px 0px 0px #fff6af;
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+	background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+	background-color:#ffec64;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+
+main section article div#contenedor_info_articulo div#opciones_de_compra a.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+	background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
+	background-color:#ffab23;
+}
+
+main section article div#contenedor_info_articulo div#opciones_de_compra a.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* END OPCIONES DE COMPRA (VERSIÓN MÓVIL) */
+/************************************************ */
+
+/* END CONTENEDOR INFORMACIÓN ARTÍCULO (VERSIÓN MÓVIL) */
+/************************************************ */
+
+/*************************************************
+/* INFORMACIÓN DETALLADA (VERSIÓN MÓVIL) */
+
+main section article div#informacion_detallada {
+	margin-top: 2ex;
+	padding-top: 2ex;
+	margin-bottom: 2ex;
+	padding-bottom: 2ex;
+	border-top: 1px solid #D8D8D8;
+	border-bottom: 1px solid #D8D8D8;
+}
+
+main section article div#informacion_detallada p {
+	text-align: justify;
+}
+
+/* END INFORMACIÓN DETALLADA (VERSIÓN MÓVIL) */
+/************************************************ */
+
+/*************************************************
+/* COMENTARIOS (VERSIÓN MÓVIL) */
+
+main section article div#comentarios_usuarios {
+	margin-top: 5vw;
+	padding: 1ex;
+	font-size: 5vw;
+}
+
+main section article div#comentarios_usuarios h3 {
+	text-align: center;
+}
+
+main section article div#comentarios_usuarios div.opinion_cliente {
+	margin-top: 10vw;
+	border-bottom: 1px solid #D8D8D8;
+}
+
+main section article div#comentarios_usuarios div.opinion_cliente p.votos_comentarios img.estrella {
+	width: 6vw;
+}
+
+main section article div#comentarios_usuarios div.opinion_cliente p.votos_comentarios a {
+	display: none;
+}
+
+main section article div#comentarios_usuarios div.opinion_cliente p.autor_comentarios a {
+	text-decoration: none;
+}
+
+main section article div#comentarios_usuarios div.opinion_cliente p.comentarios {
+	padding-top: 2ex;
+}
+
+main section article div#comentarios_usuarios div.opinion_cliente p.respuestas a {
+	text-decoration: none;
+}
+
+main section article div#comentarios_usuarios div.opinion_cliente p.respuestas input {
+	width: 5rem;
+}
+
+/* END COMENTARIOS (VERSIÓN MÓVIL) */
+/************************************************ */
+
+/*************************************************
+/* PRODUCTOS RELACIONADOS (VERSIÓN MÓVIL) */
+
+main section article div.productos_recomendados {
+	padding-top: 5vw;
+}
+
+main section article div.productos_recomendados div.contenedor_articulos article {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 5vw;
+	margin-bottom: 10vw;
+	text-align: center;
+	background-color: #D8D8D8;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main section article div.productos_recomendados div.contenedor_articulos article a img {
+	width: 80%;
+	margin-top: 6vw;
+	margin-bottom: 4vw;
+}
+
+main section article div.productos_recomendados div.contenedor_articulos article a {
+	text-decoration: none;
+}
+
+main section article div.productos_recomendados div.contenedor_articulos article a h2, 
+main section article div.productos_recomendados div.contenedor_articulos article p {
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+	font-size: 4vw;
+}
+
+/* PRODUCTOS RELACIONADOS (VERSIÓN MÓVIL) */
+/************************************************ */
+
+/*************************************************
+/* VISTA DE ESCRITORIO - Dispositivos >= 768 píxeles */
+@media (min-width: 768px) {
+
+	/*************************************************
+	/* CONTENEDOR INFORMACIÓN ARTÍCULO (VERSIÓN DE DE ESCRITORIO) */
+
+	main section article {
+		font-size: 1.5vw;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+
+	main section article div#contenedor_info_articulo {
+		display: inline-flex;
+	}
+
+	/*************************************************
+	/* IMAGEN SUPERIOR (VERSIÓN DE ESCRITORIO) */
+
+	main section article div#contenedor_info_articulo div#contenedor_imagen_superior {
+		display: inline-block;
+		width: 40%;
+		padding-top: 1vw;
+		padding-right: 1vw;
+		padding-left: 1rem;
+	}
+
+	main section article div#contenedor_info_articulo div#contenedor_imagen_superior img {
+		width: 100%;
+	}
+
+	/* END IMAGEN SUPERIOR (VERSIÓN DE ESCRITORIO) */
+	/************************************************ */
+
+	/*************************************************
+	/* INFORMACIÓN ARTÍCULO (VERSIÓN DE ESCRITORIO) */
+
+	main section article div#contenedor_info_articulo div#informacion {
+		display: inline-block;
+		width: 30%;
+		padding-top: 1vw;
+	}
+
+	main section article div#contenedor_info_articulo div#informacion > * {
+		padding-top: 1ex;
+	}
+
+	main section article div#contenedor_info_articulo div#informacion img#imagen_inferior {
+		width: 0%;
+		display: none;
+	}
+
+	/* END INFORMACIÓN ARTÍCULO (VERSIÓN DE ESCRITORIO) */
+	/************************************************ */
+
+	/*************************************************
+	/* OPCIONES DE COMPRA (VERSIÓN DE ESCRITORIO) */
+
+	main section article div#contenedor_info_articulo div#opciones_de_compra {
+		display: inline-block;
+		width: 29.5%;
+		padding-top: 1vw;
+		text-align: center;
+	}
+
+	main section article div#contenedor_info_articulo div#opciones_de_compra > * {
+		padding-top: 1vw;
+	}
+
+	main section article div#contenedor_info_articulo div#opciones_de_compra div > * {
+		padding-top: 1vw;
+	}
+
+	main section article div#contenedor_info_articulo div#opciones_de_compra div div > * {
+		margin-top: 0px;
+	}
+
+	main section article div#contenedor_info_articulo div#opciones_de_compra div div select#cantidad_articulo {
+		padding-bottom: 1vw;
+	}
+
+	main section article div#contenedor_info_articulo div#opciones_de_compra a.myButton {
+		width: 60%;
+		margin-top: 1vw;
+		margin-bottom: 1vw;
+	}
+
+	/* END OPCIONES DE COMPRA (VERSIÓN DE ESCRITORIO) */
+	/************************************************ */
+
+	/* END CONTENEDOR INFORMACIÓN ARTÍCULO (VERSIÓN DE ESCRITORIO) */
+	/************************************************ */
+
+	/*************************************************
+	/* INFORMACIÓN DETALLADA (VERSIÓN DE ESCRITORIO) */
+
+	main section article div#informacion_detallada {
+		display: block;
+		padding: 2ex;
+	}
+
+	main section article div#informacion_detallada p {
+		text-align: justify;
+		padding-bottom: 1ex;
+	}
+
+	/* END INFORMACIÓN DETALLADA (VERSIÓN DE ESCRITORIO) */
+	/************************************************ */
+
+	/*************************************************
+	/* COMENTARIOS (VERSIÓN DE ESCRITORIO) */
+
+	main section article div#comentarios_usuarios {
+		margin-top: 1vw;
+		padding: 2ex;
+		font-size: 1.5vw;
+	}
+
+	main section article div#comentarios_usuarios h3 {
+		padding-left: 1rem;
+		text-align: left;
+	}
+
+	main section article div#comentarios_usuarios div.opinion_cliente {
+		margin-top: 2vw;
+		padding: 1rem;
+	}
+
+	main section article div#comentarios_usuarios div.opinion_cliente p.votos_comentarios img.estrella {
+		width: 2vw;
+	}
+
+	main section article div#comentarios_usuarios div.opinion_cliente p.votos_comentarios a {
+		display: inline;
+		text-decoration: none;
+		color: black;
+		font-weight: bold;
+	}
+
+	/* END COMENTARIOS (VERSIÓN DE ESCRITORIO) */
+	/************************************************ */
+
+	/*************************************************
+	/* PRODUCTOS RELACIONADOS (VERSIÓN DE ESCRITORIO) */
+
+	main section article div.productos_recomendados {
+		padding-top: 2vw;
+	}
+
+	main section article div.productos_recomendados div.contenedor_articulos {
+		display: inline-flex;
+	}
+
+	main section article div.productos_recomendados div.contenedor_articulos article {
+		display: inline-block;
+		width: 30%;
+		margin: 0px;
+		margin-top: 2vw;
+		margin-bottom: 2vw;
+		margin-left: 1.5vw;
+		margin-right: 1vw;
+		text-align: center;
+		background-color: #D8D8D8;
+		height: 25vw;
+
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	main section article div.productos_recomendados div.contenedor_articulos article a:hover {
+		color: #c89140;
+		text-decoration: underline;
+	}
+
+	main section article div.productos_recomendados div.contenedor_articulos article a img {
+		width: 80%;
+		margin-top: 1vw;
+		margin-bottom: 1vw;
+	}
+
+	main section article div.productos_recomendados div.contenedor_articulos article a h2, 
+	main section article div.productos_recomendados div.contenedor_articulos article p {
+		padding-top: 0.5ex;
+		padding-bottom: 0.5ex;
+		font-size: 1.3vw;
+	}
+
+	/* PRODUCTOS RELACIONADOS (VERSIÓN DE ESCRITORIO) */
+	/************************************************ */
+
+}
+/* END VISTA DE ESCRITORIO */
+/************************************************ */
